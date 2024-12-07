@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff; 
+}
+#calculator {
+    background-color: #302f2f;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 360px;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;  
+} 
+#box {
+    font-size: 2.5em;
+    font-weight: bold;
+    background-color: #ffffff; 
+    color: #000000;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    min-height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    border-spacing: 10px;
+    margin-bottom: 10px;
+} 
+button {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: none;
+    background-color: #ffffff;  
+    color: #000000;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+} 
+button:hover {
+    background-color: #858585;  
+    transform: scale(1.1);
+} 
+.operator {
+    background-color: #ffffff;  
+    color: rgb(0, 0, 0);
+}
+
+.operator:hover {
+    background-color: #858585;  
+}
+ 
+#equal_sign {
+    background-color: #ffffff;  
+    color: rgb(0, 0, 0);
+    width: 100%;
+    grid-column: span 4;
+}
+
+#equal_sign:hover {
+    background-color: #858585;  
+} 
+button:focus, #box:focus {
+    outline: none;
+} 
+#dot {
+    width: 60px;
+}
+
+#plus_minus {
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0);
+}
+
+#plus_minus:hover {
+    background-color: #858585;  
+} 
+#last_operation_history {
+    font-size: 0.8em;
+    color: #000000;  
+    margin-bottom: 10px;
+} 
+#backspace_btn {
+    background-color: #ffffff;  
+    color: rgb(0, 0, 0);
+}
+
+#backspace_btn:hover {
+    background-color: #858585; 
+}
